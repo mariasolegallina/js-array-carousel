@@ -21,6 +21,11 @@ for (let i = 0; i < imagesArray.length; i++) {
     // inviare al DOM le immagini nell'array
     const image = imagesArray [i]
     const imageToHtml = `<img src="${image}" alt="" class="gallery__img">`
-    galleryDOMElement.innerHTML = galleryDOMElement + imageToHtml
+    galleryDOMElement.innerHTML += imageToHtml
 }
+
+// recuperare dal DOM le immagini inviate con for
+const galleryImgDOMElements = document.querySelectorAll('.gallery__img')
+// console.log(galleryImgDOMElements)
+
 
